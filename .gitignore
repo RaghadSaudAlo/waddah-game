@@ -1,0 +1,85 @@
+﻿# Waddah monorepo .gitignore
+#
+# The audio is PDPL-protected child speech from King Abdulaziz University
+# Hospital. Git history is permanent — a WAV committed once is committed
+# forever, even after you delete it. This file is a compliance control, not
+# housekeeping.
+
+# --- Data (PDPL) ---
+*.wav
+*.mp3
+*.flac
+# ...but the pre-baked prompt audio IS application content and must ship.
+# These are ElevenLabs renderings of fixed Arabic words and sentences — a
+# synthetic adult voice reading the lexicon. No child speech, no PDPL concern.
+# Without this negation the app deploys silent, because `*.mp3` above would
+# quietly exclude all 185 clips from the repo and therefore from the build.
+!app/assets/audio/*.mp3
+# Leading slash = repo root ONLY. A bare `data/` also matched app/lib/data/,
+# which holds word_bank.dart (the 84-word list) — the app would not compile
+# after a fresh clone. Verified with `git check-ignore -v`.
+/data/
+manifest_with_splits.csv
+**/child_ids*
+
+# --- Model weights (too large for GitHub, live on the HF Hub) ---
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+checkpoints/
+
+# --- Secrets ---
+.env
+.env.*
+# ...but the templates MUST be committed — they are how a teammate knows which
+# keys to set. They contain names only, never values.
+!.env.example
+!.env.*.example
+*token*.json
+serviceAccountKey.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Flutter / Dart ---
+app/build/
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/ios/Pods/
+app/android/.gradle/
+app/android/local.properties
+app/**/GeneratedPluginRegistrant.*
+
+# --- Editor / OS ---
+.DS_Store
+.vscode/settings.json
+
+# --- Tool logs ---
+# firebase-debug.log lands in the repo root on any CLI failure and contains
+# full request/response bodies, including auth-adjacent metadata.
+*.log
+firebase-debug.log
+.firebase/
+
+# --- Waddah monorepo additions ---
+# Therapy service runtime output: TTS cache is regenerable, uploaded_recordings
+# is child audio (PDPL). Neither belongs in git.
+services/therapy-api/generated_audio/
+services/therapy-api/uploaded_recordings/
+services/therapy-api/*.mp3
+
+# Local checkpoint directory for running the API against disk (Task 3).
+model/
+*.onnx
+
+# Windows
+Thumbs.db
+desktop.ini

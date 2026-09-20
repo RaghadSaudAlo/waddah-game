@@ -1,0 +1,58 @@
+{
+  "hosting": {
+    "public": "app/build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "//": "Flutter does NOT content-hash these filenames - main.dart.js is main.dart.js on every build. If they are cached, a redeploy never reaches anyone who has already visited, and the only fix is telling every user to hard-refresh. Each path is listed explicitly: an @(a|b|c) extglob here silently matched nothing and these fell through to the catch-all below, which is how they ended up cached for a day on the first deploy.",
+        "source": "/",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+      },
+      {
+        "source": "/index.html",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+      },
+      {
+        "source": "/main.dart.js",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+      },
+      {
+        "source": "/flutter_bootstrap.js",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+      },
+      {
+        "source": "/flutter_service_worker.js",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+      },
+      {
+        "source": "/version.json",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+      },
+      {
+        "//": "Safe to cache forever: these filenames ARE content hashes - sha1(text)[:16] - so changed text means a different filename. See tools/generate_audio.py.",
+        "source": "**/*.mp3",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      },
+      {
+        "//": "canvaskit ships inside the Flutter SDK and changes only with a Flutter upgrade, which also changes main.dart.js above. It is ~5MB gzipped, so caching it is what makes the second visit fast.",
+        "source": "/canvaskit/**",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      },
+      {
+        "//": "Images and fonts: stable names, rarely edited. One day, then revalidate.",
+        "source": "**/*.@(png|jpg|jpeg|gif|webp|otf|ttf|woff|woff2|css)",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+      }
+    ]
+  }
+}

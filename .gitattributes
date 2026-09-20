@@ -1,0 +1,47 @@
+# Waddah monorepo — line-ending policy
+#
+# WHY THIS FILE EXISTS (do not delete it):
+#
+# `core.autocrlf=true` is set on at least one team machine. Without the rules
+# below, git rewrites LF to CRLF on checkout. For most files that is harmless
+# churn. For shared/arabic_phoneme_lexicon.csv it is a hard failure:
+#
+#   LF   (committed) SHA256 = e4c830ce5d666249a8435f42f68714266e6ca4702e0850037ac42d13f270cc13
+#   CRLF (converted) SHA256 = a0596cde830ae1ae34f45c417a4411aff504f9a5d6079e42c55e180c2d3e81af
+#
+# waddah_core/infer.py refuses to start the API when the lexicon hash does not
+# match the one recorded at training time — a deliberate guard, because every
+# CTC output index is derived from this CSV. Left unpinned, the API would boot
+# on macOS and refuse to boot on Windows from the very same commit.
+#
+# Normalize everything to LF in the repo AND in the working tree.
+* text=auto eol=lf
+
+# Belt and braces for the two files whose bytes are load-bearing.
+*.csv   text eol=lf
+*.ipynb text eol=lf
+
+# Scripts that genuinely require their native ending.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh  text eol=lf
+gradlew text eol=lf
+
+# Binary — never touch, never diff.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.riv  binary
+*.ttf  binary
+*.otf  binary
+*.wav  binary
+*.mp3  binary
+*.m4a  binary
+*.jar  binary
+*.keystore binary
+*.jks  binary
+
+# Keep the notebook out of diffs; it is reviewed in Colab, not in a PR.
+*.ipynb -diff

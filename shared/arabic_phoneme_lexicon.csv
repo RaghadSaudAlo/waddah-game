@@ -1,0 +1,85 @@
+﻿word,arabic_letter,target_phoneme,phoneme_position,phoneme_sequence
+أسد,ء,/ʔ/,initial,/ʔ/ /a/ /s/ /a/ /d/
+برتقال,ب,/b/,initial,/b/ /u/ /r/ /t/ /u/ /q/ /aː/ /l/
+تفاح,ت,/t/,initial,/t/ /u/ /f/ /aː/ /ħ/
+ثلاجة,ث,/θ/,initial,/θ/ /a/ /l/ /aː/ /dʒ/ /a/
+جزر,ج,/dʒ/,initial,/dʒ/ /a/ /z/ /a/ /r/
+حصان,ح,/ħ/,initial,/ħ/ /i/ /sˤ/ /aː/ /n/
+خيمة,خ,/χ/,initial,/χ/ /eː/ /m/ /a/
+دجاجه,د,/d/,initial,/d/ /a/ /dʒ/ /aː/ /dʒ/ /a/
+ذرة,ذ,/ð/,initial,/ð/ /u/ /r/ /a/
+راس,ر,/r/,initial,/r/ /aː/ /s/
+زرافة,ز,/z/,initial,/z/ /a/ /r/ /aː/ /f/ /a/
+سيارة,س,/s/,initial,/s/ /a/ /j/ /aː/ /r/ /a/
+شمس,ش,/ʃ/,initial,/ʃ/ /a/ /m/ /s/
+صحن,ص,/sˤ/,initial,/sˤ/ /a/ /ħ/ /n/
+ضفدع,ض,/dˤ/,initial,/dˤ/ /i/ /f/ /d/ /a/ /ʕ/
+طيارة,ط,/tˤ/,initial,/tˤ/ /a/ /j/ /aː/ /r/ /a/
+ظهر,ظ,/ðˤ/,initial,/ðˤ/ /a/ /h/ /r/
+عصير,ع,/ʕ/,initial,/ʕ/ /a/ /sˤ/ /iː/ /r/
+غسالة,غ,/γ/,initial,/γ/ /a/ /s/ /aː/ /l/ /a/
+فيل,ف,/f/,initial,/f/ /iː/ /l/
+قرد,ق,/q/,initial,/q/ /i/ /r/ /d/
+كتاب,ك,/k/,initial,/k/ /i/ /t/ /aː/ /b/
+ليمون,ل,/l/,initial,/l/ /eː/ /m/ /uː/ /n/
+مسجد,م,/m/,initial,/m/ /a/ /s/ /dʒ/ /i/ /d/
+نار,ن,/n/,initial,/n/ /aː/ /r/
+هدايا,ه,/h/,initial,/h/ /a/ /d/ /aː/ /j/ /a/
+واحد,و,/w/,initial,/w/ /aː/ /ħ/ /i/ /d/
+يد,ي,/j/,initial,/j/ /a/ /d/
+باب,ب,/b/,medial,/b/ /aː/ /b/
+دباب,ب,/b/,medial,/d/ /a/ /b/ /aː/ /b/
+مفتاح,ت,/t/,medial,/m/ /i/ /f/ /t/ /aː/ /ħ/
+ثلاثة,ث,/θ/,medial,/θ/ /a/ /l/ /aː/ /θ/ /a/
+شجرة,ج,/dʒ/,medial,/ʃ/ /a/ /dʒ/ /a/ /r/ /a/
+احمر,ح,/ħ/,medial,/ʔ/ /a/ /ħ/ /m/ /a/ /r/
+مخدة,خ,/χ/,medial,/m/ /i/ /χ/ /a/ /d/ /d/ /a/
+وردة,د,/d/,medial,/w/ /a/ /r/ /d/ /a/
+اذن,ذ,/ð/,medial,/ʔ/ /u/ /ð/ /u/ /n/
+كورة,ر,/r/,medial,/k/ /uː/ /r/ /a/
+ازرق,ز,/z/,medial,/ʔ/ /a/ /z/ /r/ /a/ /q/
+اسود,س,/s/,medial,/ʔ/ /a/ /s/ /w/ /a/ /d/
+فرشاة,ش,/ʃ/,medial,/f/ /u/ /r/ /ʃ/ /aː/ /t/
+عصفور,ص,/sˤ/,medial,/ʕ/ /u/ /sˤ/ /f/ /uː/ /r/
+أخضر,ض,/dˤ/,medial,/ʔ/ /a/ /χ/ /dˤ/ /a/ /r/
+شنطة,ط,/tˤ/,medial,/ʃ/ /a/ /n/ /tˤ/ /a/
+نظارة,ظ,/ðˤ/,medial,/n/ /a/ /ðˤ/ /aː/ /r/ /a/
+ساعة,ع,/ʕ/,medial,/s/ /aː/ /ʕ/ /a/
+يغسل,غ,/γ/,medial,/j/ /a/ /γ/ /s/ /i/ /l/
+تلفون,ف,/f/,medial,/t/ /i/ /l/ /f/ /uː/ /n/
+بقرة,ق,/q/,medial,/b/ /a/ /q/ /a/ /r/ /a/
+سمكة,ك,/k/,medial,/s/ /a/ /m/ /a/ /k/ /a/
+قلم,ل,/l/,medial,/q/ /a/ /l/ /a/ /m/
+تمر,م,/m/,medial,/t/ /a/ /m/ /r/
+عنب,ن,/n/,medial,/ʕ/ /i/ /n/ /a/ /b/
+قهوه,ه,/h/,medial,/q/ /a/ /h/ /w/ /a/
+موز,و,/w/,medial,/m/ /a/ /w/ /z/
+خيار,ي,/j/,medial,/χ/ /i/ /j/ /aː/ /r/
+يقرا,ء,/ʔ/,final,/j/ /i/ /q/ /r/ /a/ /ʔ/
+دب,ب,/b/,final,/d/ /u/ /b/
+بيت,ت,/t/,final,/b/ /eː/ /t/
+مثلث,ث,/θ/,final,/m/ /u/ /θ/ /a/ /l/ /l/ /a/ /θ/
+درج,ج,/dʒ/,final,/d/ /u/ /r/ /dʒ/
+مسبح,ح,/ħ/,final,/m/ /a/ /s/ /b/ /a/ /ħ/
+مطبخ,خ,/χ/,final,/m/ /a/ /tˤ/ /b/ /a/ /χ/
+ولد,د,/d/,final,/w/ /a/ /l/ /a/ /d/
+قنفذ,ذ,/ð/,final,/q/ /u/ /n/ /f/ /u/ /ð/
+سرير,ر,/r/,final,/s/ /a/ /r/ /iː/ /r/
+خبز,ز,/z/,final,/χ/ /u/ /b/ /z/
+بطاطس,س,/s/,final,/b/ /a/ /tˤ/ /aː/ /tˤ/ /i/ /s/
+ريش,ش,/ʃ/,final,/r/ /iː/ /ʃ/
+مقص,ص,/sˤ/,final,/m/ /i/ /q/ /a/ /sˤ/
+بيض,ض,/dˤ/,final,/b/ /eː/ /dˤ/
+مشط,ط,/tˤ/,final,/m/ /i/ /ʃ/ /tˤ/
+محافظ,ظ,/ðˤ/,final,/m/ /a/ /ħ/ /aː/ /f/ /i/ /ðˤ/
+اصبع,ع,/ʕ/,final,/ʔ/ /i/ /sˤ/ /b/ /a/ /ʕ/
+شماغ,غ,/γ/,final,/ʃ/ /u/ /m/ /aː/ /γ/
+خروف,ف,/f/,final,/χ/ /a/ /r/ /uː/ /f/
+صندوق,ق,/q/,final,/sˤ/ /u/ /n/ /d/ /uː/ /q/
+كيك,ك,/k/,final,/k/ /eː/ /k/
+عسل,ل,/l/,final,/ʕ/ /a/ /s/ /a/ /l/
+علم,م,/m/,final,/ʕ/ /a/ /l/ /a/ /m/
+عين,ن,/n/,final,/ʕ/ /eː/ /n/
+سكينه,ه,/h/,final,/s/ /a/ /k/ /iː/ /n/ /a/ /h/
+شامبو,و,/w/,final,/ʃ/ /aː/ /m/ /b/ /w/
+كرسي,ي,/j/,final,/k/ /u/ /r/ /s/ /j/
